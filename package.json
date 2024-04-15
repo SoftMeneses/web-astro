@@ -10,7 +10,13 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@astrojs/react": "^3.3.0",
     "@fontsource-variable/chivo": "^5.0.13",
-    "astro": "^4.5.5"
+    "@tabler/icons-react": "^3.2.0",
+    "@types/react": "^18.2.78",
+    "@types/react-dom": "^18.2.25",
+    "astro": "^4.5.5",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   }
 }
