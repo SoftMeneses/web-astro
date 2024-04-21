@@ -1,6 +1,6 @@
 <header id="cs-navigation">
   <div class="cs-container">
-    <a href="" class="cs-logo" aria-label="back to home">
+    <a href="http://localhost:4321/" class="cs-logo" aria-label="back to home">
       <img
         src="../../public/san cristobal 2.svg"
         alt="Caritas San Cristóbal"
@@ -77,9 +77,31 @@
           <li class="cs-li">
             <a href="" class="cs-li-link"> Noticias </a>
           </li>
-          <li class="cs-li">
-            <a href="/contact" class="cs-li-link"> Contáctanos </a>
+          <li class="cs-li cs-dropdown" tabindex="0">
+            <span class="cs-li-link">
+              Contactos
+              <img
+                class="cs-drop-icon"
+                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/down-gold.svg"
+                alt="dropdown icon"
+                width="15"
+                height="15"
+                decoding="async"
+                aria-hidden="true"
+              />
+            </span>
+            <ul class="cs-drop-ul">
+              <li class="cs-drop-li">
+                <a href="/contact" class="cs-li-link cs-drop-link">contacto 1</a>
+              </li>
+              <li class="cs-drop-li">
+                <a href="/contact2" class="cs-li-link cs-drop-link">contacto 2</a>
+              </li>
+            </ul>
           </li>
+          <!-- <li class="cs-li">
+            <a href="/contact" class="cs-li-link"> Contáctanos </a>
+          </li> -->
         </ul>
       </div>
     </nav>
@@ -686,7 +708,7 @@
     #cs-navigation .cs-logo {
       width: 18.4%;
       max-width: 21.875rem;
-      height: 3rem;
+      height: 3.5rem;
       /* margin-right auto pushes everything away from it to the right */
       margin: 0 auto 0 0;
       padding: 0;

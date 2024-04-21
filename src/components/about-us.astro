@@ -1,0 +1,160 @@
+<!-- ============================================ -->
+<!--            Side By Side Reverse              -->
+<!-- ============================================ -->
+
+<section id="sbsr-1599">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Misión, Visión y Valores</span>
+            <h2 class="cs-title">Nuestra Misión</h2>
+            <p class="cs-text">
+                Promover acciones a la luz del evangelio y la Doctrina Social de la Iglesia, que permitan a los más pobres y excluidos ejercer plenamente su derecho a la vida digna, fortaleciendo sus capacidades, aumentando su capital humano, físico y social, y haciéndole partícipe en el desarrollo de la civilización del Amor en Venezuela.
+            </p>
+            <picture class="cs-picture cs-picture1">
+                <!--Mobile Image-->
+                <source media="(max-width: 600px)" srcset="public/programa saman img1.png">
+                <!--Tablet and above Image-->
+                <source media="(min-width: 601px)" srcset="public/programa saman img1.png">
+                <img loading="lazy" decoding="async" src="public/programa saman img1.png" alt="Programa S.A.M.A.N San Cristobal" width="608" height="406">
+            </picture>
+        </div>
+        <div class="cs-stats-group">
+            <picture class="cs-picture cs-picture2">
+                <!--Mobile Image-->
+                <source media="(max-width: 600px)" srcset="../../public/Papa-Francisco-campana-comparte-el-viaje.jpg">
+                <!--Tablet and above Image-->
+                <source media="(min-width: 601px)" srcset="../../public/Papa-Francisco-campana-comparte-el-viaje.jpg">
+                <img loading="lazy" decoding="async" src="../../public/Papa-Francisco-campana-comparte-el-viaje.jpg" alt="Papa Francisco respalda la campaña de Cáritas Comparte el viaje de apoyo a los migrantes y refugiados" width="608" height="662">
+            </picture>
+            <h2 class="cs-title">Nuestra Visión</h2>
+            <p class="cs-text">
+                Desde nuestro compromiso cristiano, especialmente con la vida de los pobres y excluidos a través de la comunión y solidaridad interdiocesana, anhelamos una Venezuela justa y fraterna constituida por hombres y mujeres reconciliados, con dignidad y derechos, libres, solidarios y protagonistas de su historia como hijos e hijas de Dios.
+            </p>
+        </div>
+    </div>
+</section>
+
+<style>
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #sbsr-1599 {
+    padding: var(--sectionPadding);
+  }
+  #sbsr-1599 .cs-container {
+    width: 100%;
+    /* changes to 1280px at tablet */
+    max-width: 36.5rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* 48px - 64px */
+    gap: clamp(3rem, 6vw, 4rem);
+  }
+  #sbsr-1599 .cs-content {
+    margin-top: 8rem;
+    /* set text align to left if content needs to be left aligned */
+    text-align: left;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* centers content horizontally, set to flex-start to left align */
+    align-items: flex-start;
+  }
+  #sbsr-1599 .cs-topper {
+    font-size: var(--topperFontSize);
+    line-height: 1.2em;
+    text-transform: uppercase;
+    text-align: inherit;
+    letter-spacing: .1em;
+    font-weight: 700;
+    color: var(--primary);
+    margin-bottom: 2rem;
+    display: block;
+  }
+  #sbsr-1599 .cs-title {
+    font-size: var(--headerFontSize);
+    font-weight: 900;
+    line-height: 1.2em;
+    text-align: inherit;
+    max-width: 43.75rem;
+    margin: 0 0 1rem 0;
+    color: var(--headerColor);
+    position: relative;
+  }
+  #sbsr-1599 .cs-text {
+    font-size: var(--bodyFontSize);
+    line-height: 1.5em;
+    text-align: inherit;
+    width: 100%;
+    max-width: 40.625rem;
+    margin: 0;
+    color: var(--bodyTextColor);
+  }
+  #sbsr-1599 .cs-text {
+    /* Override.  cs-topper cs-title and first cs-text should be removed and put into your global css sheet so it can control every instance of them on your site and is consistent. This selector is a section specific override that stays inside this stitch */
+    margin-bottom: 1rem;
+  }
+  #sbsr-1599 .cs-text:last-of-type {
+    margin-bottom: 2rem;
+  }
+  #sbsr-1599 .cs-picture {
+    width: 100%;
+    display: block;
+    position: relative;
+    z-index: 1;
+  }
+  #sbsr-1599 .cs-picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  #sbsr-1599 .cs-picture1 {
+    height: 95vw;
+    max-height: 25rem;
+  }
+  #sbsr-1599 .cs-picture2 {
+    height: 111vw;
+    max-height: 31.25rem;
+  }
+  #sbsr-1599 .cs-stats-group {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* 28px - 40px */
+    gap: clamp(1.75rem, 3vw, 2.5rem);
+  }
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+  #sbsr-1599 .cs-container {
+    max-width: 80rem;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+  }
+  #sbsr-1599 .cs-content {
+    /* sends it to the right in the 2nd position */
+    order: 2;
+  }
+  #sbsr-1599 .cs-picture1 {
+    /* 340px - 460px */
+    min-height: clamp(21.25rem, 35vw, 28.75rem);
+    height: 100%;
+    max-height: 100%;
+  }
+  #sbsr-1599 .cs-picture2 {
+    margin-top: 5rem;
+    /* 530px - 660px */
+    min-height: clamp(33.125rem, 45vw, 41.25rem);
+    height: 100%;
+    max-height: 100%;
+  }
+}
+                                
+</style>
+                                
